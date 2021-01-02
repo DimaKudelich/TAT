@@ -30,7 +30,7 @@ public class Airport {
     public List<MilitaryPlane> getMilitaryPlanes() {
         return planes.stream()
                 .filter(plane -> plane instanceof MilitaryPlane)
-                .map(plane -> (MilitaryPlane)plane)
+                .map(plane -> (MilitaryPlane) plane)
                 .collect(Collectors.toList());
     }
 
@@ -42,31 +42,20 @@ public class Airport {
 
     public List<MilitaryPlane> getTransportMilitaryPlanes() {
         return getMilitaryPlanes().stream()
-                .filter(plane->plane.getType() == MilitaryType.TRANSPORT)
+                .filter(plane -> plane.getType() == MilitaryType.TRANSPORT)
                 .collect(Collectors.toList());
     }
 
     public List<MilitaryPlane> getBomberMilitaryPlanes() {
-        List<MilitaryPlane> bomberMilitaryPlanes = new ArrayList<>();
-        List<MilitaryPlane> militaryPlanes = getMilitaryPlanes();
-
-        for (int i = 0; i < militaryPlanes.size(); i++) {
-            MilitaryPlane plane = militaryPlanes.get(i);
-
-            if (plane.getType() == MilitaryType.BOMBER) {
-                bomberMilitaryPlanes.add(plane);
-            }
-        }
-
         return getMilitaryPlanes().stream()
-                .filter(plane->plane.getType()==MilitaryType.BOMBER)
+                .filter(plane -> plane.getType() == MilitaryType.BOMBER)
                 .collect(Collectors.toList());
     }
 
     public List<ExperimentalPlane> getExperimentalPlanes() {
         return planes.stream()
-                .filter(plane->plane instanceof ExperimentalPlane)
-                .map(plane -> (ExperimentalPlane)plane)
+                .filter(plane -> plane instanceof ExperimentalPlane)
+                .map(plane -> (ExperimentalPlane) plane)
                 .collect(Collectors.toList());
     }
 
@@ -89,8 +78,8 @@ public class Airport {
         return planes;
     }
 
-    private void print(Collection<? extends Plane> collection) {
-        for(Plane plane:collection){
+    private void printPlanes(Collection<? extends Plane> collection) {
+        for (Plane plane : collection) {
             System.out.println(plane);
         }
     }
