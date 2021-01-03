@@ -11,6 +11,7 @@ import planes.Plane;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class AirportTest {
     private static List<Plane> planes = Arrays.asList(
@@ -53,16 +54,9 @@ public class AirportTest {
 
         List<? extends Plane> planesSortedByMaxLoadCapacity = airport.getPlanes();
 
-        boolean nextPlaneMaxLoadCapacityIsHigherThanCurrent = true;
-        for (int i = 0; i < planesSortedByMaxLoadCapacity.size() - 1; i++) {
-            Plane currentPlane = planesSortedByMaxLoadCapacity.get(i);
-            Plane nextPlane = planesSortedByMaxLoadCapacity.get(i + 1);
-            if (currentPlane.getMaxLoadCapacity() > nextPlane.getMaxLoadCapacity()) {
-                nextPlaneMaxLoadCapacityIsHigherThanCurrent = false;
-                break;
-            }
-        }
-        Assert.assertTrue(nextPlaneMaxLoadCapacityIsHigherThanCurrent);
+        Assert.assertTrue(IntStream.range(0, airport.getPlanes().size() - 2)
+                .allMatch(i -> planesSortedByMaxLoadCapacity.get(i).getMaxLoadCapacity()
+                        <= planesSortedByMaxLoadCapacity.get(i + 1).getMaxLoadCapacity()));
     }
 
     @Test
