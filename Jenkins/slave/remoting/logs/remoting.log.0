@@ -1,0 +1,56 @@
+џэт. 02, 2021 7:33:23 PM hudson.remoting.jnlp.Main createEngine
+INFO: Setting up agent: DESKTOP-21325JB
+џэт. 02, 2021 7:33:23 PM hudson.remoting.jnlp.Main$CuiListener <init>
+INFO: Jenkins agent is running in headless mode.
+џэт. 02, 2021 7:33:23 PM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 4.6
+џэт. 02, 2021 7:33:23 PM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using C:\Program Files\Jenkins\slave\remoting as a remoting work directory
+џэт. 02, 2021 7:33:23 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://localhost:8080/]
+џэт. 02, 2021 7:33:23 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+џэт. 02, 2021 7:33:23 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: localhost
+  Agent port:    50603
+  Identity:      88:68:ad:90:45:7e:3c:a7:03:af:c3:d5:7f:c3:83:c2
+џэт. 02, 2021 7:33:23 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+џэт. 02, 2021 7:33:23 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to localhost:50603
+џэт. 02, 2021 7:33:23 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+џэт. 02, 2021 7:33:24 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: 88:68:ad:90:45:7e:3c:a7:03:af:c3:d5:7f:c3:83:c2
+џэт. 02, 2021 7:33:24 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected
+џэт. 02, 2021 7:53:09 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Terminated
+џэт. 02, 2021 7:53:20 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Master isn't ready to talk to us on http://localhost:8080/tcpSlaveAgentListener/. Will try again: response code=503
+џэт. 02, 2021 7:53:31 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Master isn't ready to talk to us on http://localhost:8080/tcpSlaveAgentListener/. Will try again: response code=503
+џэт. 02, 2021 7:53:42 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Performing onReconnect operation.
+џэт. 02, 2021 7:53:42 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: onReconnect operation completed.
+џэт. 02, 2021 7:53:42 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://localhost:8080/]
+џэт. 02, 2021 7:53:42 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+џэт. 02, 2021 7:53:42 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: localhost
+  Agent port:    50835
+  Identity:      88:68:ad:90:45:7e:3c:a7:03:af:c3:d5:7f:c3:83:c2
+џэт. 02, 2021 7:53:42 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+џэт. 02, 2021 7:53:42 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to localhost:50835
+џэт. 02, 2021 7:53:42 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+џэт. 02, 2021 7:53:43 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: 88:68:ad:90:45:7e:3c:a7:03:af:c3:d5:7f:c3:83:c2
+џэт. 02, 2021 7:53:43 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected
